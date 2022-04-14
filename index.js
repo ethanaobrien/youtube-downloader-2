@@ -150,7 +150,7 @@ async function getVideo(link, opts) {
         console.error(e);
         throw new Error('Error decrypting urls');
     }
-    var out = {urls:urls,audio:[],video:[]};
+    var out = {urls:urls,audio:[],video:[],videoTitle:videoTitle};
     for (var i=0; i<adaptiveUrls.length; i++) {
         if (adaptiveUrls[i].mimeType.split('/')[0] === 'video') {
             out.video.push(adaptiveUrls[i]);

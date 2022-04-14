@@ -8,6 +8,7 @@ dl('https://www.youtube.com/watch?v=y2jYeFCIpRY').then(function(info) {
     console.log(info.urls); //Array of video info objects
     console.log(info.video); //Array of video info objects
     console.log(info.audio); //Array of video info objects
+    console.log(info.videoTitle); //the title of the video
 })
 ```
 
