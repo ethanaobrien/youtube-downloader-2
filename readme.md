@@ -3,8 +3,8 @@
 A simple function that will return the urls of a youtube video
 
 ```js
-var dl = require('youtube-downloader-ethanaobrien');
-dl('https://www.youtube.com/watch?v=y2jYeFCIpRY').then(function(info) {
+const dl = require('youtube-downloader-2');
+dl('https://www.youtube.com/watch?v=y2jYeFCIpRY').then((info) => {
     console.log(info.urls); //Array of video info objects
     console.log(info.video); //Array of video info objects
     console.log(info.audio); //Array of video info objects
